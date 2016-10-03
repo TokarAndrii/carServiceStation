@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Car Service Station "TOKAR"</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style type="text/css">
         #container {
-            height: 450px;
-            width: 650px;
+            height: 600px;
+            width: 750px;
             margin: 20px auto;
             position: relative;
         }
 
         #img {
-            height: 450px;
-            width: 650px;
+            height: 600px;
+            width: 750px;
             position: absolute;
         }
 
         #leftHolder {
-            height: 450px;
+            height: 600px;
             width: 100px;
             top: 0px;
             position: absolute;
@@ -32,7 +37,7 @@
         }
 
         #rightHolder {
-            height: 450px;
+            height: 600px;
             width: 100px;
             top: 0px;
             position: absolute;
@@ -57,7 +62,7 @@
         }
 
         #tokar_container_header {
-            height: 100px;
+            height: 80px;
             width: auto;
         }
 
@@ -73,36 +78,37 @@
             font-family: cursive;
         }
 
-     /*   .navbar-brand {
-            padding: 0px;
-        }
-        .navbar-brand>img {
-            height: 50%;
-            padding: 15px;
-            width: auto;
+        /*   .navbar-brand {
+               padding: 0px;
+           }
+           .navbar-brand>img {
+               height: 50%;
+               padding: 15px;
+               width: auto;
+           }
+
+           .navbar-header{i
+               min-height: 30px;
+           }*/
+
+        #tokar_container_content {
+            /* background-image: url("images/");
+             backgroun-repeat: no-repeat;*/
         }
 
-        .navbar-header{i
-            min-height: 30px;
-        }*/
-        
-        #tokar_container_content{
-           /* background-image: url("images/");
-            backgroun-repeat: no-repeat;*/
-        }
-
-        #remontAndServ{
+        #remontAndServ {
             text-align: center;
             background-image: url("images/fonRemonta.jpg");
 
         }
 
-        #spareStore{
+        #spareStore {
             text-align: center;
             /*background-color: #DAEACD;*/
 
         }
-        #carWash{
+
+        #carWash {
             text-align: center;
             /*background-image: url("images/fonCarWash.jpg");
             -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -110,14 +116,17 @@
             -o-background-size: 100%; /* Opera 9.6+ */
             background-size: 100%; /* Современные браузеры */
 
-
         }
 
-        .carWashpic{
+        .carWashpic {
             display: inline-block;
         }
 
-
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
 
 
     </style>
@@ -155,7 +164,7 @@
 
 
 <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
 
         <div class="container-fluid">
             <div class="navbar-header">
@@ -169,7 +178,8 @@
 
 
                 <figure>
-                    <a href="index.html"><img height="100px" src="images/serviceCenterLogo2.jpg" alt="logo of Car service station Tokar"></a>
+                    <a href="index.html"><img height="45px" src="images/serviceCenterLogo2.jpg"
+                                              alt="logo of Car service station Tokar"></a>
 
                     <figcaption><h4>"Tokar CSS"</h4></figcaption>
                 </figure>
@@ -228,11 +238,15 @@
     </nav>
 </header>
 
+<div style="height: 111px"></div>
+
+<p></p>
+<p></p>
 <p></p>
 <p></p>
 
 <section id="tokar_container_content">
-    <div id = wrapperContainerContent>
+    <div id=wrapperContainerContent>
         <div id="container">
             <img src="images/img1.jpg" id="img">
 
@@ -244,85 +258,114 @@
 
 </section>
 
-<section id = remontAndServ>
+
+
+<section id=remontAndServ>
     <h2 class="headline"><span>Ремонт и обслуживание автомобиля</span></h2>
     <div class="container repairing">
         <figure class="repairing">
-        <img src="images/remont.jpg" alt="remont" width="700" height="486">
-        <h3><figcaption>Лучшее оборудование и персонал</figcaption></h3>
+            <img src="images/remont.jpg" alt="remont" width="700" height="486">
+            <h3>
+                <figcaption>Лучшее оборудование и персонал</figcaption>
+            </h3>
         </figure>
     </div>
 </section>
 
-<section id = spareStore>
+<section id=spareStore>
     <h2 class="headline"><span>Автомобильные товары и запчасти</span></h2>
     <div class="container spareSrore">
         <figure class="spareStorePic">
             <img src="images/spareStore.jpg" alt="spare" width="1000" height="486">
-            <h3><figcaption>Только оригинальные запчасти и товары известных брендов</figcaption></h3>
+            <h3>
+                <figcaption>Только оригинальные запчасти и товары известных брендов</figcaption>
+            </h3>
         </figure>
     </div>
 </section>
 
-<section id = carWash>
+<section id=carWash>
     <h2 class="headline"><span>Автомойка</span></h2>
 
     <div class="container spareStore">
-       <!-- <figure class="carWashpic">
-            <img src="images/carWash1.jpg" alt="carWash" width="372" height="386">
-            <h3><figcaption>Качественнo и быстро</figcaption></h3>
-        </figure>-->
+        <!-- <figure class="carWashpic">
+             <img src="images/carWash1.jpg" alt="carWash" width="372" height="386">
+             <h3><figcaption>Качественнo и быстро</figcaption></h3>
+         </figure>-->
         <figure class="carWashpic">
-            <img src="images/carWash2.jpg" alt="carWash" width="472" height="386">
-            <h3><figcaption>Современное оборудование</figcaption></h3>
+            <img src="images/carWash2.jpg" alt="carWash" width="500" height="386">
+            <h3>
+                <figcaption>Современное оборудование</figcaption>
+            </h3>
         </figure>
         <figure class="carWashpic">
-            <img src="images/carWash3.jpg" alt="carWash" width="472" height="386">
-            <h3><figcaption>Химчистка авто</figcaption></h3>
+            <img src="images/carWash3.jpg" alt="carWash" width="500" height="386">
+            <h3>
+                <figcaption>Химчистка авто</figcaption>
+            </h3>
         </figure>
     </div>
 </section>
+<div style="height: 61px"></div>
 
-<!--<div id="tokar_container_content">
-    <div id="container">
-        <img src="images/img1.jpg" id="img">
 
-        <div id="leftHolder"><img onclick="slide(-1)" class="left" src="images/leftArrow.png"></div>
-        <div id="rightHolder"><img onclick="slide(+1)" class="right" src="images/rightArrow.png"></div>
+
+<div class="footerPlace" style="height: 111px; background-color:lavenderblush;">
+    <div class="topRow">
+        <div class="grid_18 grid_right">
+            <ul class="list-inline">
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Действующие акции</a></li>
+                <li><a href="#">Проверить наличие запчастей</a></li>
+                <li><a href="#">Записаться</a></li>
+                <li><a href="#">Ваш менеджер</a></li>
+                <li><a href="#">Схема проеда и контакты</a></li>
+
+            </ul>
+
+        </div>
     </div>
-</div>-->
 
+    <div class="clear" style="height: 41px"></div>
+    <div class="middleRow">
+        <div class="grid_18 grid_right">
+            <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-sitemap fa-2x" aria-hidden="true"></i> Карта Сайта</a></li>
+                <li><a href="workerCabinet.jsp"><i class="fa fa-car fa-2x" aria-hidden="true"></i> Кабинте для
+                    сотрудников</a></li>
+
+
+                <li>
+                    <div class="col-md-16">
+                        <div class="text">
+                            Мы в социальных сетях:
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                            <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                            <a href="https://plus.google.com" target="_blank"><i
+                                    class="fa fa-google-plus fa-2x"></i></a></div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="grid_16 bottomRow">
+        <div class="text">
+            &copy; 2016.
+
+            CSS Systems. Все права защищены.
+
+            <a href="#">Политика конфиденциальности</a>
+
+        </div>
+
+        <div class="clear"></div>
+    </div>
 </div>
 
-<footer class="footer">
-    <div class="pull-left">
-        <ul class="list-inline">
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Действующие акции</a></li>
-            <li><a href="#">Проверить наличие запчастей</a></li>
-            <li><a href="#">Записаться</a></li>
-            <li><a href="#">Ваш менеджер</a></li>
-            <li><a href="#">Схема проеда и контакты</a></li>
-            <li><a href="#">Карта Сайта</a></li>
-            <li><a href="workerCabinet.jsp">Кабинет для сотрудников</a></li>
-            <li>
-                <div class="col-md-16">
-                    <div class="text">
-                        Мы в социальных сетях:
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
-                        <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></div>
-
-                </div>
-            </li>
-
-        </ul>
-    </div>
-
-
-    <!--<div><a href="#">Кабинет для сотрудников</a> </div>-->
-</footer>
 
 <p></p>
 <p></p>

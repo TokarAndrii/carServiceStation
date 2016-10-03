@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="stylesheet.css">
   <p>
-    <a href="http://localhost:8080/carServiceStation/">
+    <a href="https://carservicestation.herokuapp.com/">
     <img  src="../../images/serviceCenterLogo.jpg" alt="Service Station"
          style="float:right; width: 135px; height: 135px">
       </a>
