@@ -211,7 +211,7 @@ public class UpdateServiceForClient extends HttpServlet {
         ServiceForClient serviceForClient = serviceForClientServ.updateServiceForClient(idSFCtoBeUpdated, newServiceTypes, newStoreGoodsTypes, newStartDate,
                 newFinishDate, newPrice, newWorker);
         req.setAttribute("serviceForClient", serviceForClient);
-        req.getRequestDispatcher("workerCabinet.jsp").forward(req, resp);
+        req.getRequestDispatcher("loginForWorker.jsp").forward(req, resp);
 
         printWriter.flush();
 

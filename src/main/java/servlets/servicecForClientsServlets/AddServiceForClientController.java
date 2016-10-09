@@ -159,7 +159,7 @@ public class AddServiceForClientController extends HttpServlet {
             LOGGER.info("WRONG TYPE OF SERVICE OR GOODS FOR CLIENT -->> INFO from doPost in AddServiceForClientController!!! ");
         }
 
-        req.getRequestDispatcher("workerCabinet.jsp").forward(req, resp);
+        req.getRequestDispatcher("loginForWorker.jsp").forward(req, resp);
         printWriter.flush();
 
     }
